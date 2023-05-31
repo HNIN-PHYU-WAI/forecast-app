@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./weather.js";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="container">
+      <div className="App">
+        <Weather defaultCity="Bangkok" />
+      </div>
+      <p className="coder text-center">
+        Coded by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/HNIN-PHYU-WAI"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer noopenner"
         >
-          Learn React
+          HNIN PHYU WAI
         </a>
-      </header>
+      </p>
     </div>
   );
 }
-
-export default App;
